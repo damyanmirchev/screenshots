@@ -83,30 +83,30 @@ While the Python Service should be responsible for the orchestration.
 For now I have done the most basic optimization - by changing the image type of the screenshots from .png to .jpg.
 But in a real world application I can do a much more detailed research.
 
-A quick Google Search led me to the following pages:
-https://www.bannerbear.com/blog/ways-to-speed-up-puppeteer-screenshots/
-https://stackoverflow.com/questions/67291945/reduce-size-of-headless-puppeteer-screenshot
+A quick Google Search led me to the following pages:  
+https://www.bannerbear.com/blog/ways-to-speed-up-puppeteer-screenshots/  
+https://stackoverflow.com/questions/67291945/reduce-size-of-headless-puppeteer-screenshot  
 So there is a lot more that can be done.
 
 ### 3. How monitoring could be implemented and what is important to be monitored.
 Actually, there are a lot of things that can be done for monitoring:
 
-- Logging
+- Logging  
 We can add comprehensive logging to capture relevant information, including errors, warnings, and information about application behavior. With structured log formats to make it easier to analyze and search logs.
 
-- Error Tracking
+- Error Tracking  
 Integrate error tracking tools like Sentry (recommended), Rollbar, or New Relic to capture and notify for errors in real-time.
 For both Python-based Services and Node.JS-based services - Sentry works great.
 
-- Performance Metrics
+- Performance Metrics  
 Collect and monitor performance metrics, such as response times, request rates, and resource utilization (CPU, memory).
 By using tools like Prometheus, Grafana, or Datadog we can create dashboards and set up alerts for performance anomalies.
 
-- Screenshot Storage
+- Screenshot Storage  
 We may have to monitor the storage space used for storing screenshots.
 We can set up alerts to be notified when storage reaches predefined thresholds.
 
-- And more:
+- And more:  
 Resource Utilization / Container Orchestration Monitoring / Alerting / API Monitoring / etc...
 
 ### 4. Bonus points for service to be able to run inside docker
