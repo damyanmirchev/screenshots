@@ -1,0 +1,8 @@
+{
+  "name": "screenshots-crawler",
+  "version": "0.1.0",
+  "description": "Screenshots Crawler",
+  "dependencies": {
+    "puppeteer": "^21.3.8"
+  }
+}
